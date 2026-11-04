@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient (Deep Night Navy) -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0e172e" />
+      <stop offset="100%" stop-color="#060a15" />
+    </linearGradient>
+
+    <!-- Vibrant Electric Cyan to Royal Blue Gradient -->
+    <linearGradient id="primaryGrad" x1="15" y1="20" x2="85" y2="85" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- Play Icon Neon Highlight -->
+    <linearGradient id="playGrad" x1="38" y1="32" x2="68" y2="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#67e8f9" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Modern App Squircle Background -->
+  <rect x="3" y="3" width="94" height="94" rx="24" fill="url(#bgGrad)" stroke="#38bdf8" stroke-width="2.5" stroke-opacity="0.35" />
+
+  <!-- Inner Subtle Glow Rim -->
+  <rect x="5" y="5" width="90" height="90" rx="22" fill="none" stroke="#60a5fa" stroke-width="1" stroke-opacity="0.2" />
+
+  <!-- Left Vertical Reel Pillar (Part of 'M' and 9:16 vertical ratio) -->
+  <rect x="18" y="24" width="13" height="52" rx="6.5" fill="url(#primaryGrad)" filter="url(#neonGlow)" />
+
+  <!-- Right Vertical Reel Pillar -->
+  <rect x="69" y="24" width="13" height="52" rx="6.5" fill="url(#primaryGrad)" filter="url(#neonGlow)" />
+
+  <!-- Dynamic Center Play Symbol (Forms the 'M' & Reels play) -->
+  <path
+    d="M38 33.5C38 31.2 40.5 29.8 42.4 31L65.2 46.5C66.9 47.7 66.9 50.3 65.2 51.5L42.4 67C40.5 68.2 38 66.8 38 64.5Z"
+    fill="url(#playGrad)"
+  />
+
+  <!-- Accent Playful Neon Sparkle / Dot on Top Right -->
+  <circle cx="75.5" cy="24.5" r="4" fill="#a5f3fc" />
+  <circle cx="75.5" cy="24.5" r="2.2" fill="#ffffff" />
+</svg>
